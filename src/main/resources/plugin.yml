@@ -1,0 +1,16 @@
+name: CobWebManager
+main: org.core.cobwebManager.SpiderWebRemover
+version: 1.0
+api-version: 1.16
+author: IlTuoNome
+
+commands:
+  spiderwebremover:
+    description: Ricarica la configurazione del plugin.
+    usage: /spiderwebremover reload
+    permission: spiderwebremover.reload
+
+permissions:
+  spiderwebremover.reload:
+    description: Permette di ricaricare la configurazione del plugin.
+    default: op
