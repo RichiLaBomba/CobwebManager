@@ -1,16 +1,25 @@
 name: CobWebManager
 main: org.core.cobwebManager.SpiderWebRemover
-version: 1.0
+version: 2.0
 api-version: 1.16
-author: IlTuoNome
+author: RichiLaBomba
 
 commands:
+  swb:
+    description: Gestisce la rimozione delle ragnatele.
+    usage: /swb clear
+    permission: spiderwebremover.swb
+
   spiderwebremover:
     description: Ricarica la configurazione del plugin.
     usage: /spiderwebremover reload
     permission: spiderwebremover.reload
 
 permissions:
+  spiderwebremover.swb:
+    description: Permette di rimuovere ragnatele tramite il comando /swb clear
+    default: op
+
   spiderwebremover.reload:
     description: Permette di ricaricare la configurazione del plugin.
     default: op
